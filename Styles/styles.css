@@ -19,7 +19,44 @@ h1, h2, h3, h4 {
 	font-size: 3rem;
 }
 
+/* Headers */
 .page-name {
-    background-color: white;
-    opacity: 50%;
+    margin: 0;
+    display: block;
+    margin-top: 20rem;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.page-caption {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.shibuya-bg {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100vw - 100%) / 2));
+    background-size: cover;
+    background-position: center center;
+    z-index: -5;
+    filter: brightness(75%);
+}
+
+/* Media Queries for Header */
+@media (min-width: 60em) {
+    .page-name {
+        display: block;
+        margin-top: 30rem;
+        font-size: 7rem;
+    }
+
+    .page-caption {
+        font-size: 3rem;
+    }
 }
