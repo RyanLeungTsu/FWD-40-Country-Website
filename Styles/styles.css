@@ -52,6 +52,7 @@ a {
 }
 
 .menu {
+    z-index: 2;
     margin: 0;
     display: flex;
     align-content: center;
@@ -91,4 +92,14 @@ a {
     .about {
         margin-top: 27rem;
     }
+}
+
+/* Gallery */
+.link-gallery img {
+    margin: 2rem auto;
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 0.5rem white;
 }
