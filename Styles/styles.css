@@ -15,7 +15,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 li {
@@ -57,7 +57,7 @@ a {
     top: 6.5rem;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 40rem;
     object-fit: cover;
     /* transform: translateX(calc((100vw - 100%) / 2)); */
     background-position: center center;
@@ -125,10 +125,6 @@ a {
     text-align: center;
 }
 
-.spotify h2 {
-    font-size: 2rem;
-}
-
 /* Media Queries for Header */
 @media (min-width: 60em) {
     .page-name {
@@ -157,6 +153,49 @@ a {
         text-shadow: 0.1rem 0.2rem 0rem black;
     }
 }
+
+/* Main */
+.article {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 20rem;
+    background-color: rgb(128, 8, 32);
+}
+
+.article h3 {
+    margin: 0;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+}
+
+.article p {
+    background-color: rgb(128, 8, 32);
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.gallery {
+    /* margin: 25rem 0.5rem 1rem ; */
+    padding-top: 15rem;
+    text-align: left;
+}
+
+.gallery img {
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    padding: 1.5rem 0rem;
+    border-bottom: 0.2rem solid white;
+    border-top: 0.2rem solid white;
+}
+
 /* Index Main */
 /*about*/
 .about {
@@ -167,7 +206,6 @@ a {
 }
 
 .about h2 {
-    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -190,14 +228,6 @@ a {
     position: relative;
     top: 0;
     margin: 2rem;
-}
-
-.gallery img {
-    display: block;
-    margin: 0 auto;
-    width: 20rem;
-    height: 15rem;
-    object-fit: cover;
 }
 
 .gallery-img .hover-txt {
@@ -231,39 +261,7 @@ a {
     }
 }
 
-/* Main */
-.article {
-    display: block;
-    margin: 0 auto;
-    margin-top: 2rem;
-    width: 20rem;
-    background-color: rgb(128, 8, 32);
-}
-
-.article h3 {
-    margin: 0;
-    padding-left: 1.5rem;
-    font-size: 2.5rem;
-}
-
-.article p {
-    background-color: rgb(128, 8, 32);
-    margin: 0;
-    padding: 1.5rem;
-}
 /* Explore Main */
-.explore.gallery {
-    margin: 15rem 0.5rem 1rem ;
-    text-align: left;
-}
-
-.explore.gallery h2 {
-    font-size: 2rem;
-    padding: 1.5rem 0rem;
-    border-bottom: 0.2rem solid white;
-    border-top: 0.2rem solid white;
-}
-
 .explore.article img {
     display: block;
     width: 100%;
@@ -300,8 +298,9 @@ a {
 }
 
 /* Transport Main */
-.transport.gallery {
-    margin-top: 20rem;
+.transport.page-name {
+    font-size: 2.7rem;
+    padding-bottom: 6.2rem;
 }
 
 .transport.article {
@@ -315,8 +314,18 @@ a {
     object-fit: cover;
 }
 
-.resources-img img {
-    width: 100%;
+.resources {
+    margin-top: 5rem;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.resources-item {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 90%;
 }
 
 
