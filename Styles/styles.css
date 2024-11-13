@@ -339,10 +339,10 @@ a {
     top: 6.5rem;
     left: 0;
     display: grid;
-    height: 10rem;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* max-height: 10rem;
+    max-width: 100vw; */
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(3, 3fr);
     padding: 0.2rem;
     gap: 0.7rem;
 }
@@ -352,6 +352,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(65%);
 }
 
 .nigiri {
@@ -364,7 +365,7 @@ a {
     grid-row: 2/2;
 }
 
-.takoyaki {
+.gyoza {
     grid-column: 1/2;
     grid-row: 2/4;
 }
