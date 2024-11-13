@@ -31,6 +31,7 @@ a {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 20rem;
     font-size: 4.5rem;
     color: rgb(255, 255, 255);
@@ -46,10 +47,24 @@ a {
     object-fit: cover;
     /* transform: translateX(calc((100vw - 100%) / 2)); */
     background-position: center center;
-    z-index: -5;
+    z-index: -1;
     filter: brightness(65%);
 }
-/* Header: Menu */
+
+.page-img {
+    display: block;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    /* transform: translateX(calc((100vw - 100%) / 2)); */
+    background-position: center center;
+    z-index: -1;
+    filter: brightness(70%);
+}
+/*Header*/
 .menu {
     text-align: center;
     justify-content: center;
@@ -88,7 +103,6 @@ a {
     border: 0.5rem solid white;
 }
 
-
 .menu.toggled ul {
     z-index: 100;
     display: block;
@@ -121,6 +135,7 @@ a {
     } */
 }
 
+/* Index Main */
 /*about*/
 .about {
     margin: 35rem 0.5rem 1rem;
@@ -149,8 +164,6 @@ a {
 }
 
 /* Gallery */
-
-
 .gallery-img {
     position: relative;
     top: 0;
@@ -195,6 +208,20 @@ a {
         height: 30rem;
     }
 }
+
+/* Explore Main */
+.explore-gallery{
+    text-align: center;
+}
+
+.akihabara img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+
 
 /* Footer */
 footer {
