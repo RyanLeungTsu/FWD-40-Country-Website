@@ -1,3 +1,21 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -11,6 +29,7 @@ body {
 	color: #f0f0f0;
 	background-color: #252525;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -102,8 +121,6 @@ a {
 /* Index Header */
 .shibuya-bg {
     display: block;
-    width: 100%;
-    height: auto;
     object-fit: cover;
     transform: translateX(calc((100vw - 100%) / 2));
     background-position: center center;
@@ -142,10 +159,6 @@ a {
 
 /* general Styles for Main */
 .article {
-    display: block;
-    margin: 0 auto;
-    margin-top: 2rem;
-    width: 20rem;
     background-color: rgb(128, 8, 32);
 }
 
@@ -153,12 +166,6 @@ a {
     margin: 0;
     padding-left: 1.5rem;
     font-size: 2rem;
-}
-
-.article p {
-    background-color: rgb(128, 8, 32);
-    margin: 0;
-    padding: 1.5rem;
 }
 
 .gallery {
@@ -193,7 +200,8 @@ a {
 }
 
 .about {
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     padding: 0.5rem;
 }
@@ -208,11 +216,18 @@ a {
     margin: auto;
 }
 
+.index.gallery {
+    text-align: center;
+}
+
+.gallery-wrap {
+    justify-content: center;
+}
 
 .gallery-img {
+    display: inline-block;
     position: relative;
     top: 0;
-    margin: 2rem;
 }
 
 .gallery-img .hover-txt {
@@ -221,7 +236,7 @@ a {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -80%);
-    font-size: 4rem;
+    font-size: 2rem;
     color: #eaeaea;
 }
 
@@ -238,6 +253,10 @@ a {
         font-size: 4rem;
     }
 
+    .spotify {
+        width: 60%;
+    }
+
     .spotify-mobile {
         display: none;
     }
@@ -245,18 +264,28 @@ a {
     .spotify-desktop {
         display: block;
     }
+
+    
 }
 
 @media (min-width: 60em) {
     .gallery-wrap{
-        display: flex;
-        justify-content: space-between;
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .gallery-img {
+        padding: 1rem;
     }
 
     .gallery-img img {
         display: inline-block;
-        width: 35rem;
+        width: 30rem;
         height: 30rem;
+    }
+
+    .gallery-img .hover-txt {
+        font-size: 4rem;
     }
 }
 
@@ -330,20 +359,26 @@ a {
 /* Transport Main */
 .transport.gallery {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
 }
 
-.transport.article {
-    width: 100%;
-    margin: auto;
-    margin-top: 2rem;
-    }
+.transport-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
 
 .transport.article img {
     margin: 0rem;
-    width: 20rem;
+    width: 100%;
     height: 25rem;
     object-fit: cover;
+}
+
+.transport.article p {
+    padding: 1.5rem;
 }
 
 .resources {
@@ -384,14 +419,21 @@ a {
         max-width: 30%;
     }
 
-    .transport-wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .transport.gallery {
+        display: block;
+        margin: auto;
+        width: 60%;
     }
 
-    .transport.article {
-        margin-right: 1.5rem;
+    .transport-wrap {
+        display: inline-block;
+        width: 25rem;
+        margin: 0 auto;
+        margin: 1.5rem;
+    }
+
+    .resources {
+        width: 60%;
     }
 }
 
