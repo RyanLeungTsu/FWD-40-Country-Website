@@ -334,18 +334,15 @@ a {
 }
 
 /* Food Main */
+
 .desktop-grid {
     visibility: hidden;
 }
 
 .food-grid {
     z-index: -1;
-    position: absolute;
-    top: 6.5rem;
-    left: 0;
     display: grid;
-    /* max-height: 10rem;
-    max-width: 100vw; */
+    margin-top: 6rem;
     grid-template-columns: repeat(2, 3fr);
     grid-template-rows: repeat(3, 3fr);
     padding: 0.2rem;
@@ -368,6 +365,7 @@ a {
 .unagi {
     grid-column: 2/3;
     grid-row: 2/2;
+    
 }
 
 .gyoza {
@@ -375,23 +373,19 @@ a {
     grid-row: 2/4;
 }
 
+
+
 .food-history {
     display: block;
     margin: 0 auto;
     max-width: 60%;
-    margin-top: 10rem;
     padding: 1.5rem;
+    margin-top: -40rem;
 }
 
 .food-history h2 {
     border-bottom: 0.2rem solid white;
     border-top: 0.2rem solid white;
-}
-
-@media (min-width: 30em) {
-    .food-history{
-        max-width: 40%;
-    }
 }
 
 @media (min-width: 60em) {
@@ -437,6 +431,11 @@ a {
     .shabu {
         grid-column: 2/4;
         grid-row: 3/4;
+    }
+
+    .food-history{
+        margin-top: 5rem;
+        max-width: 30%;
     }
 }
 
