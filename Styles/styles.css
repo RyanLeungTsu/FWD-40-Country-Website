@@ -173,7 +173,7 @@ a {
 }
 
 .article p {
-    padding: 1.5rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
 }
 
 .gallery {
@@ -331,8 +331,8 @@ footer {
 
 /* Explore Main */
 .explore.gallery {
-    display: block;
-    margin:auto;
+    /* display: block; */
+    margin: 0 auto;
     width: 70%;
 }
 
@@ -349,10 +349,11 @@ footer {
 }
 
 .explore.article img {
-    display: block;
     width: 100%;
-    height: 20rem;
-    object-fit: cover;
+}
+
+.explore-wrap {
+    padding: 2px 16px;
 }
 
 .attractions {
@@ -369,9 +370,10 @@ footer {
 .explore-grid img {
     display: block;
     width: 100%;
-    height: 20rem;
+    height: 100%;
     object-fit: cover;
 }
+
 
 .tokyo-station {
     grid-column: 1/3;
@@ -381,6 +383,23 @@ footer {
 .tokyo-tower {
     grid-column: 1/3;
     grid-row: 3/3;
+}
+
+
+@media (min-width: 50em) {
+    .explore.gallery {
+        min-width: 80%;
+    }
+    
+    .explore.article {
+        max-width: 20rem;
+    }
+
+    .explore.gallery img {
+        display: inline-block;
+        width: 100%;
+        height: 20rem;
+    }
 }
 
 /* Transport Main */
