@@ -40,20 +40,6 @@ a {
     
 }
 
-.shibuya-bg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    /* transform: translateX(calc((100vw - 100%) / 2)); */
-    background-position: center center;
-    z-index: -1;
-    filter: brightness(65%);
-}
-
 .page-img {
     margin-top: 6rem;
     display: block;
@@ -66,11 +52,7 @@ a {
     filter: brightness(70%);
 }
 
-.explore .page-img {
-    margin:40rem 0.5rem 3rem ;
-    text-align: center;
-}
-/*Header*/
+/* Header navbar/hamburger menu */
 .menu {
     text-align: center;
     justify-content: center;  
@@ -118,6 +100,26 @@ a {
     justify-content: center;
 }
 
+/* Index Header */
+.shibuya-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* transform: translateX(calc((100vw - 100%) / 2)); */
+    background-position: center center;
+    z-index: -1;
+    filter: brightness(65%);
+}
+
+/* Explore Headers */
+.explore .page-img {
+    margin:40rem 0.5rem 3rem ;
+    text-align: center;
+}
 
 
 /* Media Queries for Header */
@@ -150,7 +152,7 @@ a {
 }
 
 
-/* Main */
+/* general Styles for Main */
 .article {
     display: block;
     margin: 0 auto;
@@ -172,8 +174,7 @@ a {
 }
 
 .gallery {
-    /* margin: 25rem 0.5rem 1rem ; */
-    padding-top: 15rem;
+    padding-top: 5rem;
     text-align: left;
 }
 
@@ -331,6 +332,25 @@ a {
     margin: 0 auto;
     margin-top: 2rem;
     width: 90%;
+}
+
+@media (min-width: 60em) {
+    .transport.page-name{
+        font-size: 4.5rem;
+    }
+
+    .transport-wrap {
+        display: inline-flex;
+        justify-content: space-around;
+    }
+
+    .transport.gallery h2 {
+        display: block;
+    }
+
+    .transport.article {
+        margin-left: 3rem;
+    }
 }
 
 /* Food Main */
