@@ -168,7 +168,6 @@ a {
 
 .article h3 {
     margin: 0;
-    padding-left: 1.5rem;
     font-size: 2rem;
 }
 
@@ -257,6 +256,10 @@ footer {
     top: 0;
 }
 
+.hover-txt {
+    text-align: center;
+}
+
 .gallery-img .hover-txt {
     opacity: 0;
     position: absolute;
@@ -300,7 +303,7 @@ footer {
         justify-content: center;
     }
 
-    .gallery-img {
+    .index.gallery-img {
         padding: 1rem;
     }
 
@@ -404,6 +407,7 @@ footer {
 
 /* Transport Main */
 .transport.gallery {
+    display: block;
     margin: 0 auto;
     width: 80%;
 }
@@ -425,16 +429,45 @@ footer {
 
 .resources {
     margin-top: 5rem;
-    width: 90%;
+    width: 80%;
     display: block;
     margin: 0 auto;
 }
+/* Tranportation - Table styling */
+.regular-fare {
+    display: flex;
+    justify-content: center;
+}
+
+.table-head {
+    font-size: 2.5rem;
+}
+
+.regular-fare th {
+    padding: 0.5rem 0.5rem;
+}
+
+.regular-fare td {
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+}
+
+.regular-fare th, .regular-fare td {
+    border: 0.1rem solid white;
+    border-collapse: collapse;
+}
+
+.regular-fare td:hover {
+    background-color: white;
+    color: black;
+}
 
 .resources-item {
-    display: block;
-    margin: 0 auto;
     margin-top: 2rem;
-    width: 90%;
+}
+
+.resources-item iframe {
+    width: 100%;
+    height: 30rem;
 }
 
 @media (max-width: 40em) {
@@ -471,11 +504,16 @@ footer {
         display: inline-block;
         width: 25rem;
         margin: 0 auto;
-        margin: 1.5rem;
     }
 
     .resources {
         width: 60%;
+    }
+}
+
+@media (min-width: 60em) {
+    .regular-fare {
+        display: block;
     }
 }
 

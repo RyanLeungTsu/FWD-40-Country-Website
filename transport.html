@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="Icon" type="image/x-icon" href="https://ryanl1.sgedu.site/favicon.ico">
+    <link rel="Icon" type="image/x-icon" href="https://ryanleungdev.com/favicon.ico"> 
     <link rel="stylesheet" href="Styles/styles.css  ">
 </head>
 <body>
@@ -33,41 +33,80 @@
     <main>
         <section class='transport gallery'>
             <h2>Getting Around Tokyo</h2>
-            <div class='transport-wrap'>
-                <article class='transport article'>
-                    <img src="Images/transport-metro.jpg" alt="IC cards">
-                    <p>Pasmo and Suica are accepted on the Tokyo Metro, as well as on railway stations. Transfers between Tokyo Metro subway lines and Toei Subway lines are usually not free.</p>
-                </article>
-            </div>
+                <div class='transport-wrap'>
+                    <article class='transport article gallery-img'>
+                        <img src="Images/transport-metro.jpg" alt="IC cards">
+                        <a href="food.html"><h3 class='hover-txt'>IC/Pasmo Cards</h3></a>
+                        <p>Pasmo and Suica are accepted on the Tokyo Metro, as well as on railway stations. Transfers between Tokyo Metro subway lines and Toei Subway lines are usually not free.</p>
+                    </article>
+                </div>
             
             <div class='transport-wrap'>
-                <article class='transport article'>
+                <article class='transport article gallery-img'>
                     <img src="Images/transport-jr.jpg" alt="JR east railways - local lines">
+                    <a href="food.html"><h3 class='hover-txt'>JR East Railways</h3></a>
                     <p>Railway lines of JR East primarily serve the Kanto and Tohoku regions. Tokyo is located in the Kanto Region and many local rails run inside of Tokyo, offering more coverage.</p>
                 </article>
             </div>
             
             <div class='transport-wrap'>
-                <article class='transport article'>
+                <article class='transport article gallery-img'>
                     <img src="Images/transport-shinkansen.jpg" alt="shinkansen">
+                    <a href="food.html"><h3 class='hover-txt'>shinkansen</h3></a>
                     <p>The shinkansen is the number one mode of transportation for visiting places outside of Tokyo. Its fast speed and coverage of Japan makes it perfect for day trips.</p>
                 </article>
             </div>
             
             <div class='transport-wrap'>
-                <article class='transport article'>
+                <article class='transport article gallery-img'>
                     <img src="Images/transport-bus.jpg" alt="bus">
+                    <a href="food.html"><h3 class='hover-txt'>Buses</h3></a>
                     <p>Bus lines are a convenient method of transportation, especiually to newer areas where the metro does not cover such as Odaiba, and the wards along the outskirts of Tokyo.</p>
                 </article>
             </div>
         </section>
 
         <section class='resources'>
-            <article>
-                <img  class='resources-item' src="Images/tokyo-metro.webp" alt="tokyo metro lines">
+            <article class='resources-item' >
+                <table class = 'regular-fare'>
+                    <tr>
+                        <th class = 'table-head' colspan="3">Tokyo Metro Fare Prices</th>
+                    </tr>
+                    <tr>
+                        <th>Distance</th>
+                        <th>Child</th>
+                        <th>Adult</th>
+                    </tr>
+                    <tr>
+                        <td>1km - 6km</td>
+                        <td>90¥ (IC Card Fare: 89¥)</td>
+                        <td>180¥ (IC Card Fare: 178¥)</td>
+                    </tr>
+                    <tr>
+                        <td>7km - 11km</td>
+                        <td>110¥ (IC Card Fare: 104¥)</td>
+                        <td>210¥ (IC Card Fare: 209¥)</td>
+                    </tr>
+                    <tr>
+                        <td>12km - 19km</td>
+                        <td>130¥ (IC Card Fare: 126¥)</td>
+                        <td>260¥ (IC Card Fare: 252¥)</td>
+                    </tr>
+                    <tr>
+                        <td>20km - 27km</td>
+                        <td>150¥ (IC Card Fare: 146¥)</td>
+                        <td>300¥ (IC Card Fare: 293¥)</td>
+                    </tr>
+                    <tr>
+                        <td>28km - 40km</td>
+                        <td>170¥ (IC Card Fare: 162¥)</td>
+                        <td>330¥ (IC Card Fare: 324¥)</td>
+                    </tr>
+                </table>
             </article>
-            <article>
-                <iframe class='resources-item' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414957.23224342935!2d139.66045223811213!3d35.65598393755105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sca!4v1731532338820!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <article class='resources-item'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414957.23224342935!2d139.66045223811213!3d35.65598393755105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sca!4v1731532338820!5m2!1sen!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
     </main>
