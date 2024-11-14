@@ -38,19 +38,14 @@ a {
     z-index: -1;
     filter: brightness(70%);
     text-align: center;
-    /* transform: translateX(calc((100vw - 100%) / 2)); */
 }
 .page-name {
-    display: block;
-    margin: 0 auto;
     z-index: 1;
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    justify-content: center;
     text-align: center;
-    margin-top: 20rem;
     font-size: 4.5rem;
     color: rgb(255, 255, 255);
 }
@@ -117,10 +112,11 @@ a {
 }
 
 /* Media Queries for Header */
-@media (min-width: 80em) {
+@media (min-width: 60em) {
     .page-name {
-        display: block;
-        margin-top: 35rem;
+        position: absolute;
+        top: 30rem;
+        left: 0rem;
         font-size: 10rem;
     }
 }
@@ -144,6 +140,8 @@ a {
         text-shadow: 0.1rem 0.2rem 0rem black;
     }
 }
+
+
 
 /* general Styles for Main */
 .article {
@@ -195,6 +193,7 @@ a {
     margin: 0 auto;
     margin-top: 5rem;
     text-align: center;
+    border-top: 0.2rem solid white;
 }
 
 .spotify-desktop {
@@ -209,10 +208,11 @@ a {
 
 .about h2 {
     margin-bottom: 2rem;
+    border-top: 0.2rem solid white;
 }
 
 .about p {
-    width: 30%;
+    width: 70%;
     margin: auto;
 }
 
@@ -242,6 +242,10 @@ a {
 }
 
 @media (min-width: 60em) {
+    .spotify h2 {
+        font-size: 4rem;
+    }
+    
     .spotify-mobile {
         display: none;
     }
@@ -261,6 +265,20 @@ a {
         display: inline-block;
         width: 35rem;
         height: 30rem;
+    }
+}
+
+@media (min-width: 60em) {
+    .about h2 {
+        width: 60%;
+        margin: auto;
+        border-top: 0.2rem solid white;
+        font-size: 4rem;
+    }
+
+    .about p {
+        width: 30%;
+        margin: 2rem auto;
     }
 }
 
@@ -410,14 +428,12 @@ a {
     grid-row: 2/4;
 }
 
-
-
 .food-history {
     display: block;
     margin: 0 auto;
     max-width: 60%;
     padding: 1.5rem;
-    margin-top: -40rem;
+    margin-top: -25rem;
 }
 
 .food-history h2 {
