@@ -27,30 +27,34 @@ a {
 }
 
 /* Headers */
-.page-name {
-    margin: 0 auto;
-    z-index: 1;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20rem;
-    font-size: 4.5rem;
-    color: rgb(255, 255, 255);
-    
-}
-
 .page-img {
     margin-top: 6rem;
     display: block;
     width: 100%;
     height: 90vh;
+    position: relative;
     object-fit: cover;
-    /* transform: translateX(calc((100vw - 100%) / 2)); */
     background-position: center center;
     z-index: -1;
     filter: brightness(70%);
+    text-align: center;
+    /* transform: translateX(calc((100vw - 100%) / 2)); */
 }
+.page-name {
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+    margin-top: 20rem;
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+}
+
 
 /* Header navbar/hamburger menu */
 .menu {
@@ -103,27 +107,17 @@ a {
 /* Index Header */
 .shibuya-bg {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 100% ;
     height: 100vh;
     object-fit: cover;
-    /* transform: translateX(calc((100vw - 100%) / 2)); */
+    transform: translateX(calc((100vw - 100%) / 2));
     background-position: center center;
     z-index: -1;
     filter: brightness(65%);
 }
 
-/* Explore Headers */
-.explore .page-img {
-    margin:40rem 0.5rem 3rem ;
-    text-align: center;
-}
-
-
 /* Media Queries for Header */
-@media (min-width: 60em) {
+@media (min-width: 80em) {
     .page-name {
         display: block;
         margin-top: 35rem;
@@ -151,7 +145,6 @@ a {
     }
 }
 
-
 /* general Styles for Main */
 .article {
     display: block;
@@ -175,7 +168,7 @@ a {
 
 .gallery {
     padding-top: 5rem;
-    text-align: left;
+    width: 70%;
 }
 
 .gallery img {
@@ -193,20 +186,23 @@ a {
     border-top: 0.2rem solid white;
 }
 
-/* Index Header */
+/* Index Main */
+
+
 .spotify {
     width: 80%;
     display: block;
     margin: 0 auto;
-    margin-top: 17rem;
+    margin-top: 5rem;
     text-align: center;
 }
 
-/* Index Main */
-/*about*/
+.spotify-desktop {
+    display: none;
+}
+
 .about {
     margin: 1rem 0.5rem 1rem 0.5rem;
-    display: inline-block;
     text-align: center;
     padding: 0.5rem;
 }
@@ -216,20 +212,11 @@ a {
 }
 
 .about p {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    
+    width: 30%;
+    margin: auto;
 }
 
-@media (min-width: 60em) {
-    .about {
-        margin: 15rem 0.5rem 5rem;
-        display: block;
-    }
-}
 
-/* Gallery */
 .gallery-img {
     position: relative;
     top: 0;
@@ -255,6 +242,16 @@ a {
 }
 
 @media (min-width: 60em) {
+    .spotify-mobile {
+        display: none;
+    }
+
+    .spotify-desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 60em) {
     .gallery-wrap{
         display: flex;
         justify-content: space-between;
@@ -268,6 +265,23 @@ a {
 }
 
 /* Explore Main */
+.explore.gallery {
+    display: block;
+    margin:auto;
+    width: 70%;
+}
+
+.explore.gallery h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore.article {
+    display: inline-block;
+    margin: 0 auto;
+}
+
 .explore.article img {
     display: block;
     width: 100%;
@@ -304,10 +318,6 @@ a {
 }
 
 /* Transport Main */
-.transport.page-name {
-    font-size: 2.7rem;
-    padding-bottom: 6.2rem;
-}
 
 .transport.article {
     margin-top: 2rem;
@@ -334,27 +344,34 @@ a {
     width: 90%;
 }
 
-@media (min-width: 60em) {
-    .transport.page-name{
-        font-size: 4.5rem;
+@media (max-width: 60em) {
+    .transport.page-name {
+        font-size: 2.7rem;
     }
+}
 
-    .transport-wrap {
-        display: inline-flex;
-        justify-content: space-around;
+@media (min-width: 60em) {
+    .transport.gallery {
+        margin-left: 3rem;
     }
 
     .transport.gallery h2 {
         display: block;
+        max-width: 30%;
+    }
+
+    .transport-wrap {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .transport.article {
-        margin-left: 3rem;
+        margin-right: 1.5rem;
     }
 }
 
 /* Food Main */
-
 .desktop-grid {
     visibility: hidden;
 }
