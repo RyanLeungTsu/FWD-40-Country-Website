@@ -29,12 +29,15 @@ a {
 /* Headers */
 .page-name {
     margin: 0 auto;
+    z-index: 1;
     display: flex;
+    position: absolute;
     justify-content: center;
     text-align: center;
     margin-top: 20rem;
     font-size: 4.5rem;
     color: rgb(255, 255, 255);
+    
 }
 
 .shibuya-bg {
@@ -52,10 +55,8 @@ a {
 }
 
 .page-img {
+    margin-top: 6rem;
     display: block;
-    position: absolute;
-    top: 6.5rem;
-    left: 0;
     width: 100%;
     height: 90vh;
     object-fit: cover;
@@ -376,13 +377,21 @@ a {
 
 .food-history {
     display: block;
-    margin-top: 20rem;
+    margin: 0 auto;
+    max-width: 60%;
+    margin-top: 10rem;
     padding: 1.5rem;
 }
 
 .food-history h2 {
     border-bottom: 0.2rem solid white;
     border-top: 0.2rem solid white;
+}
+
+@media (min-width: 30em) {
+    .food-history{
+        max-width: 40%;
+    }
 }
 
 @media (min-width: 60em) {
