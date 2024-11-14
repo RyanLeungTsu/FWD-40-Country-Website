@@ -9,13 +9,29 @@
 	- Typography
 	- Elements
 	- Links
-# Layouts
-# Components
-	- Header
-	- Main
-	- Footer
---------------------------------------------------------------*/
+# General Header Styling (APPLIED TO ALL PAGES)
+    - Navbar 
+    - Footer
+#general Main Styling (APPLIED TO ALL PAGES)
+# Index/Homepage
+    - Index Header
+    - Index Main
+# Explore
+    - Expolore Header
+    - Explore Main
+# Transport
+    - Transport Header
+    - Transport Main
+# Food
+    - Food Header
+    - Food Main
+# Credits
+    - Credits Header
+    - Credits Main
 
+
+--------------------------------------------------------------*/
+/* Base */
 html {
     scroll-behavior: smooth;
 }
@@ -45,7 +61,7 @@ a {
     text-decoration: none;
 }
 
-/* Headers */
+/* General Header Styling */
 .page-img {
     margin-top: 6rem;
     display: block;
@@ -68,7 +84,6 @@ a {
     font-size: 4.5rem;
     color: rgb(255, 255, 255);
 }
-
 
 /* Header navbar/hamburger menu */
 .menu {
@@ -118,16 +133,6 @@ a {
     justify-content: center;
 }
 
-/* Index Header */
-.shibuya-bg {
-    display: block;
-    object-fit: cover;
-    transform: translateX(calc((100vw - 100%) / 2));
-    background-position: center center;
-    z-index: -1;
-    filter: brightness(65%);
-}
-
 /* Media Queries for Header */
 @media (min-width: 60em) {
     .page-name {
@@ -155,10 +160,9 @@ a {
     }
 }
 
-
-
 /* general Styles for Main */
 .article {
+    margin-top: 1rem;
     background-color: rgb(128, 8, 32);
 }
 
@@ -166,6 +170,10 @@ a {
     margin: 0;
     padding-left: 1.5rem;
     font-size: 2rem;
+}
+
+.article p {
+    padding: 1.5rem;
 }
 
 .gallery {
@@ -183,6 +191,25 @@ a {
     padding: 1.5rem 0rem;
     border-bottom: 0.2rem solid white;
     border-top: 0.2rem solid white;
+}
+
+/* General Styled Footer */
+footer {
+    margin-top: 5rem;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+    background-color: rgb(128, 8, 32);
+}
+
+/* Index Header */
+.shibuya-bg {
+    display: block;
+    object-fit: cover;
+    transform: translateX(calc((100vw - 100%) / 2));
+    background-position: center center;
+    z-index: -1;
+    filter: brightness(65%);
 }
 
 /* Index Main */
@@ -248,6 +275,7 @@ a {
     opacity: 1;
 }
 
+/* Index Media Query */
 @media (min-width: 60em) {
     .spotify h2 {
         font-size: 4rem;
@@ -264,8 +292,6 @@ a {
     .spotify-desktop {
         display: block;
     }
-
-    
 }
 
 @media (min-width: 60em) {
@@ -318,7 +344,8 @@ a {
 
 .explore.article {
     display: inline-block;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 .explore.article img {
@@ -375,10 +402,6 @@ a {
     width: 100%;
     height: 25rem;
     object-fit: cover;
-}
-
-.transport.article p {
-    padding: 1.5rem;
 }
 
 .resources {
@@ -539,14 +562,6 @@ a {
     }
 }
 
-/* Footer */
-footer {
-    margin-top: 5rem;
-    text-align: center;
-    color: white;
-    padding: 1.5rem;
-    background-color: rgb(128, 8, 32);
-}
 
 
 
