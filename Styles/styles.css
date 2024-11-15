@@ -117,6 +117,10 @@ a {
     margin: 3rem;
 }
 
+.logo {
+    float: right;
+}
+
 .menu-items a:hover {
     border: 0.3rem solid white;
 }
@@ -352,6 +356,10 @@ footer {
 
 .explore.article img {
     width: 100%;
+}
+
+.explore.article h3 {
+    padding-left: 1.5rem;
 }
 
 .explore-wrap {
