@@ -181,6 +181,7 @@ a {
 
 .gallery {
     padding-top: 5rem;
+    text-align: center;
 }
 
 .gallery img {
@@ -189,7 +190,12 @@ a {
     object-fit: cover;
 }
 
+.gallery-img p {
+    min-height: 14rem;
+}
+
 .gallery h2 {
+    margin: 0 auto;
     font-size: 2rem;
     padding: 1.5rem 0rem;
     border-bottom: 0.2rem solid white;
@@ -245,25 +251,20 @@ footer {
     margin: auto;
 }
 
-.index.gallery {
-    text-align: center;
-}
-
-.gallery-wrap {
+/* .gallery-wrap {
     justify-content: center;
-}
+    text-align: center;
+} */
 
 .gallery-img {
     display: inline-block;
     position: relative;
     top: 0;
-    /* display: flex;
-    flex-direction: column; */
 }
 
-.hover-txt {
+/* .hover-txt {
     text-align: center;
-}
+} */
 
 .gallery-img .hover-txt {
     opacity: 0;
@@ -285,19 +286,20 @@ footer {
 
 /* randy edit */
 
-.gallery-img p {
-    min-height: 200px;
-}
+
 
 
 /* i put these on the div with id of test... this helped  */
-
-/* margin: 0 auto;
-/* gap: 15px;
-display: grid;
-grid-template-columns: auto auto;
-width: fit-content; */
-
+@media (min-width: 50em) {
+    .gallery-wrap {
+        margin: 0 auto;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        width: fit-content;
+    }
+}
 
 /* end randy edit */
 
@@ -322,11 +324,6 @@ width: fit-content; */
 }
 
 @media (min-width: 60em) {
-    .gallery-wrap{
-        display: inline-block;
-        justify-content: center;
-    }
-
     .index.gallery-img {
         padding: 1rem;
     }
@@ -363,10 +360,16 @@ width: fit-content; */
     width: 70%;
 }
 
-.explore.gallery h2 {
+.explore-wrap {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.explore.gallery h2 {
+    max-width: 80%;
 }
 
 .explore.article {
@@ -376,20 +379,28 @@ width: fit-content; */
 }
 
 .explore.article img {
+    margin: 0rem;
     width: 100%;
+    height: 25rem;
+    object-fit: cover;
 }
 
 .explore.article h3 {
     padding-left: 1.5rem;
+    text-align: left;
+}
+
+.explore.article p {
+    text-align: left;
 }
 
 .explore-wrap {
     padding: 2px 16px;
 }
 
-.attractions {
+/* .attractions {
     text-align: center;
-}
+} */
 
 .explore-grid {
     display: grid;
@@ -416,6 +427,13 @@ width: fit-content; */
     grid-row: 3/3;
 }
 
+@media (min-width: 25em) {
+    .explore-wrap {
+        display: inline-block;
+        width: 20rem;
+        margin: 0 auto;
+    }
+}
 
 @media (min-width: 50em) {
     .explore.gallery {
@@ -490,6 +508,10 @@ width: fit-content; */
     font-size: 3.5rem;
 }
 
+.transport.article p {
+    text-align: left;
+}
+
 .resources {
     margin-top: 5rem;
     width: 80%;
@@ -556,7 +578,6 @@ width: fit-content; */
     }
 
     .transport.gallery {
-        display: block;
         margin: auto;
         width: 80%;
     }
@@ -722,6 +743,7 @@ tr.credit-table-head th{
 }
 
 .form {
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
 }
@@ -729,10 +751,6 @@ tr.credit-table-head th{
 .form label {
     margin-right: 3rem;
 }
-
-
-
-
 
 @media (min-width: 60em) {
     
