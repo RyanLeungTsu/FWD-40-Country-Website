@@ -59,6 +59,7 @@ li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /* General Header Styling */
@@ -257,6 +258,8 @@ footer {
     display: inline-block;
     position: relative;
     top: 0;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .hover-txt {
@@ -280,6 +283,25 @@ footer {
 .gallery-img:hover .hover-txt {
     opacity: 1;
 }
+
+/* randy edit */
+
+.gallery-img p {
+    min-height: 200px;
+}
+
+
+/* i put these on the div with id of test... this helped  */
+
+/* margin: 0 auto;
+/* gap: 15px;
+display: grid;
+grid-template-columns: auto auto;
+width: fit-content; */
+
+
+/* end randy edit */
+
 
 /* Index Media Query */
 @media (min-width: 60em) {
@@ -436,7 +458,8 @@ footer {
         grid-row: 1/3;
     }
 
-    .sensoji {
+    .attractions .explore-grid img.sensoji {
+        height: 100%;
         grid-column: 4/5;
         grid-row: 1/3;
     }
@@ -670,6 +693,20 @@ footer {
     font-size: 7rem;
 }
 
+.credits-table {
+    width: 50%;;
+    margin: 0 auto;
+}
+
+.credits-table th {
+    padding: 0.5rem;
+    color: #252525 ;
+    background-color: white;
+}
+
+.credits-table td {
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+}
 
 
 
