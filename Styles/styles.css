@@ -694,19 +694,37 @@ width: fit-content; */
 }
 
 .credits-table {
+    border-collapse: collapse;
     width: 50%;;
     margin: 0 auto;
+}
+
+tr.credit-table-head th{
+    font-size: 3rem;
+    background-color:#252525 ;
+    color: white;
 }
 
 .credits-table th {
     padding: 0.5rem;
     color: #252525 ;
     background-color: white;
+    font-size: 1.5rem;
 }
 
 .credits-table td {
     padding: 0.5rem 3rem 0.5rem 0.5rem;
 }
+
+.credits-table a {
+    /* Makes entire table data area clickable */
+    display: block;
+}
+
+.credits-table td.hover-table:hover {
+    background-color: rgb(128, 8, 32);
+}
+
 
 
 
