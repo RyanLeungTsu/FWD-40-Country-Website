@@ -355,9 +355,8 @@ footer {
 
 /* Explore Main */
 .explore.gallery {
-    /* display: block; */
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
 }
 
 .explore-wrap {
@@ -394,14 +393,6 @@ footer {
     text-align: left;
 }
 
-.explore-wrap {
-    padding: 2px 16px;
-}
-
-/* .attractions {
-    text-align: center;
-} */
-
 .explore-grid {
     display: grid;
     grid-gap: 0.50rem;
@@ -432,6 +423,10 @@ footer {
         display: inline-block;
         width: 20rem;
         margin: 0 auto;
+    }
+
+    .explore.gallery h2 {
+        max-width: 45rem;
     }
 }
 
@@ -574,7 +569,7 @@ footer {
 @media (min-width: 25em) {
     .transport.gallery h2 {
         display: block;
-        max-width: 80%;
+        max-width: 50rem;
     }
 
     .transport.gallery {
