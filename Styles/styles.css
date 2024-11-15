@@ -149,7 +149,7 @@ a {
         display: none;
     }
 
-    .menu-items {
+    .menu-items, .menu.toggled .menu-items {
         display: inline-flex;
         background-color: transparent;
         position: absolute;
@@ -430,7 +430,8 @@ footer {
         grid-row: 2/3;
     }
 
-    .gundam {
+    .attractions .explore-grid img.gundam {
+        height: 100%;
         grid-column: 1/2;
         grid-row: 1/3;
     }
@@ -664,7 +665,10 @@ footer {
     }
 }
 
-
+/* Credits */
+.credits.page-name {
+    font-size: 7rem;
+}
 
 
 
