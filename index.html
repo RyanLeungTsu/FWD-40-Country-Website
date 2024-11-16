@@ -41,14 +41,17 @@
 
     <main>
         <!-- Embedded from Spotify Desktop App -->
+         
         <article class='spotify'>
             <h2>Sounds of Tokyo</h2>
             <iframe class='spotify-mobile' style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2SLokaKcysXRIY4IxsJ7o9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <iframe class='spotify-desktop' style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2SLokaKcysXRIY4IxsJ7o9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </article>
 
+        <a class="screen-reader-text" href="#tokyo-about">Skip to ...</a>
+
         <section class='about'>
-            <h2>The Eastern Capital</h2>
+            <h2 id='tokyo-about'>The Eastern Capital</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eos, error doloremque voluptate unde praesentium totam at inventore ratione quam.</p>
         </section>
 
@@ -69,7 +72,8 @@
     </main>
     <footer>
         <p>2024 Ryan Leung</p>
-    </footer>    
+        <a class="screen-reader-text" href="#">Top of page</a>
+    </footer>  
     <script src="Scripts/script.js"></script>
 </body>
 </html>

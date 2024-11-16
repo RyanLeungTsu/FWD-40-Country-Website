@@ -36,37 +36,39 @@
         </nav>
     </header>
     <main>
+        <a class="screen-reader-text" href="#getting-around">Skip to ...</a>
         <section class='transport gallery'>
-            <h2>Getting Around Tokyo</h2>
+            <h2 id="getting-around">Getting Around Tokyo</h2>
+            <a class="screen-reader-text" href="#tokyo-metro">Skip to ...</a>
             <div class="gallery-wrap">
                 <div class='transport-wrap'>
                     <article class='transport article gallery-img'>
-                            <img src="Images/transport-metro.webp" alt="IC cards">
+                            <img id='tokyo-metro' src="Images/transport-metro.webp" alt="tokyo metro wiht a girl waiting for train">
                             <h3 class='hover-txt'>IC/Pasmo Cards</h3>
                         <p>Pasmo and Suica are accepted on the Tokyo Metro, as well as on railway stations. Transfers between Tokyo Metro subway lines and Toei Subway lines are usually not free.</p>
                     </article>
                 </div>
-                                
+                <a class="screen-reader-text" href="#tokyo-JR">Skip to ...</a>       
                 <div class='transport-wrap'>
                     <article class='transport article gallery-img'>
-                            <img src="Images/transport-jr.webp" alt="JR east railways - local lines">
+                            <img id='tokyo-JR' src="Images/transport-jr.webp" alt="JR east railways - local lines">
                             <h3 class='hover-txt'>JR East Railways</h3>
                     <p>Railway lines of JR East primarily serve the Kanto and Tohoku regions. Tokyo is located in the Kanto Region and many local rails run inside of Tokyo, offering more coverage.</p>
                     </article>
                 </div>
-                                
+                <a class="screen-reader-text" href="#tokyo-shinkansen">Skip to ...</a>     
                 <div class='transport-wrap'>
                     <article class='transport article gallery-img'>
-                            <img src="Images/transport-shinkansen.webp" alt="shinkansen">
+                            <img id='tokyo-shinkansen' src="Images/transport-shinkansen.webp" alt="shinkansen approaching the station">
                             <h3 class='hover-txt'>shinkansen</h3>
                         <p>The shinkansen is the number one mode of transportation for visiting places outside of Tokyo. Its fast speed and coverage of Japan makes it perfect for day trips.</p>
                     </article>
                 </div>
-                                
+                <a class="screen-reader-text" href="#tokyo-bus">Skip to ...</a>      
                 <div class='transport-wrap'>
                     <article class='transport article gallery-img'>
                         <div>
-                            <img src="Images/transport-bus.webp" alt="bus">
+                            <img id='tokyo-bus' src="Images/transport-bus.webp" alt="front view of bus driving down tokyo">
                             <h3 class='hover-txt'>Buses</h3>
                         </div>
                             <p>Bus lines are a convenient method of transportation, especiually to newer areas where the metro does not cover such as Odaiba, and the wards along the outskirts of Tokyo.</p>
@@ -75,11 +77,12 @@
             </div>
         </section>
 
+        <a class="screen-reader-text" href="#tokyo-metro-fare-prices">Skip to ...</a>
         <section class='resources'>
             <article class='resources-item' >
                 <table class = 'fare'>
                     <tr>
-                        <th class = 'table-head' colspan="3">Tokyo Metro Fare Prices</th>
+                        <th id='tokyo-metro-face-prices' class = 'table-head' colspan="3">Tokyo Metro Fare Prices</th>
                     </tr>
                     <tr>
                         <th>Distance</th>
@@ -113,16 +116,15 @@
                     </tr>
                 </table>
             </article>
-
+            <!-- Embedded from google maps -->
             <article class='resources-item'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414957.23224342935!2d139.66045223811213!3d35.65598393755105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sca!4v1731532338820!5m2!1sen!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
     </main>
-
-    
     <footer>
         <p>2024 Ryan Leung</p>
+        <a class="screen-reader-text" href="#">Top of page</a>
     </footer>
     <script src="Scripts/script.js"></script>
 </body>
