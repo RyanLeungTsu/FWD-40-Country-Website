@@ -1,10 +1,6 @@
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> Table of contents:
 ----------------------------------------------------------------
-# Generic (CALLED IN ANOTHER FILE)
-	- Normalize
-	- Box sizing
-	- Media width
 # Base
 	- Typography
 	- Elements
@@ -13,6 +9,7 @@
     - Navbar 
     - Footer
 #general Main Styling (APPLIED TO ALL PAGES)
+
 # Index/Homepage
     - Index Header
     - Index Main
@@ -28,8 +25,6 @@
 # Credits
     - Credits Header
     - Credits Main
-
-
 --------------------------------------------------------------*/
 /* Base */
 html {
@@ -214,6 +209,7 @@ footer {
 /* Index Header */
 .shibuya-bg {
     display: block;
+    max-width: none;
     object-fit: cover;
     transform: translateX(calc((100vw - 100%) / 2));
     background-position: center center;
@@ -359,26 +355,26 @@ footer {
     width: 80%;
 }
 
-.explore-wrap {
+/* .explore-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1rem;
-}
+} */
 
-.explore.gallery h2 {
+/* .explore.gallery h2 {
     max-width: 80%;
-}
+} */
 
-.explore.article {
+/* .explore.article {
     display: inline-block;
     margin: auto;
     margin-top: 1rem;
-}
+} */
 
 .explore.article img {
-    margin: 0rem;
+    /*margin: 0rem; */
     width: 100%;
     height: 25rem;
     object-fit: cover;
@@ -407,7 +403,6 @@ footer {
     object-fit: cover;
 }
 
-
 .tokyo-station {
     grid-column: 1/3;
     grid-row: 1/1;
@@ -420,7 +415,7 @@ footer {
 
 @media (min-width: 25em) {
     .explore-wrap {
-        display: inline-block;
+        /* display: inline-block; */
         width: 20rem;
         margin: 0 auto;
     }
@@ -431,9 +426,9 @@ footer {
 }
 
 @media (min-width: 50em) {
-    .explore.gallery {
+    /* .explore.gallery {
         min-width: 80%;
-    }
+    } */
     
     .explore.article {
         max-width: 20rem;
@@ -479,18 +474,18 @@ footer {
 
 /* Transport Main */
 .transport.gallery {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     width: 80%;
 }
 
-.transport-wrap {
+/* .transport-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1rem;
-}
+} */
 
 .transport.article img {
     margin: 0rem;
@@ -513,10 +508,20 @@ footer {
     display: block;
     margin: 0 auto;
 }
-/* Tranportation - Table styling */
+/* Tranportation - Fare Table */
 .fare {
     display: flex;
     justify-content: center;
+}
+
+.resources-item {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.resources-item iframe {
+    width: 100%;
+    height: 30rem;
 }
 
 .table-head {
@@ -531,6 +536,7 @@ footer {
 }
 
 .fare td {
+    text-align: left;
     padding: 0.5rem 3rem 0.5rem 0.5rem;
     font-size: 0.8rem;
 }
@@ -539,14 +545,6 @@ footer {
     border: 0.1rem solid white;
 }
 
-.resources-item {
-    margin-top: 2rem;
-}
-
-.resources-item iframe {
-    width: 100%;
-    height: 30rem;
-}
 
 @media (max-width: 40em) {
     .transport.page-name {
@@ -572,20 +570,19 @@ footer {
         max-width: 50rem;
     }
 
-    .transport.gallery {
-        margin: auto;
-        width: 80%;
+    .resources-item iframe {
+        max-width: 45rem;
+        height: 30rem;
     }
 
     .transport-wrap {
-        display: inline-block;
         width: 20rem;
         margin: 0 auto;
     }
 
-    .resources {
+    /* .resources {
         width: 60%;
-    }
+    } */
 }
 
 @media (min-width: 60em) {
